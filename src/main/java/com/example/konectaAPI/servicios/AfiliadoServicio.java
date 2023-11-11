@@ -27,7 +27,7 @@ public class AfiliadoServicio {
     }
 
     //ConsultarAfiliado
-    public Afiliado consultarAfiliado(Integer idAfiliado)throws Exception {
+    public Afiliado consultarAfiliado(Integer idAfiliado) throws Exception {
         try{
             Optional<Afiliado>afiliadoBuscado=this.afiliadoRepositorio.findById(idAfiliado);
             if(afiliadoBuscado.isPresent()){ //Lo encontre en BD
